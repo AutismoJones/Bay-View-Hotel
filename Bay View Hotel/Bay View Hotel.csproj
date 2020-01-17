@@ -53,6 +53,11 @@
     <Compile Include="Admin View.Designer.cs">
       <DependentUpon>Admin View.cs</DependentUpon>
     </Compile>
+    <Compile Include="bay_view_hotelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bay_view_hotelDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Bookings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +136,17 @@
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bay_view_hotelDataSet1.xsc">
+      <DependentUpon>bay_view_hotelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bay_view_hotelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bay_view_hotelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bay_view_hotelDataSet1.xss">
+      <DependentUpon>bay_view_hotelDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,6 +171,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bay_view_hotel.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
